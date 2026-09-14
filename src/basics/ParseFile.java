@@ -3,10 +3,9 @@ package basics;
 import fileworks.DataExport;
 import fileworks.DataImport;
 
-import java.io.IOException;
 
 public class ParseFile {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         String path = "data/countries.txt";
         DataImport di = new DataImport(path);
 
