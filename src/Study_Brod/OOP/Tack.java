@@ -1,0 +1,44 @@
+package Study_Brod.OOP;
+
+public class Tack {
+    String name;
+    int year;
+    double rating;
+    int duration;
+
+    public Tack(String name, int year, double rating, int duration) {
+        this.name = name;
+        this.year = year;
+        this.rating = rating;
+        this.duration = duration;
+    }
+
+    public void setDuration(int duration) {
+        if (duration<0){
+            System.out.println("Invalid duration");
+            return;
+        }
+
+        this.duration = duration;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+}

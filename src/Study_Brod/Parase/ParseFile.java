@@ -1,6 +1,5 @@
-package Study_Brod;
+package Study_Brod.Parase;
 
-import fileworks.DataExport;
 import fileworks.DataImport;
 
 public class ParseFile {
@@ -8,10 +7,13 @@ public class ParseFile {
         String path = "data/countries.txt";
         DataImport  di = new DataImport(path);
 
+        //ну просто выписывает из файла
         /*while (di.hasNext()){
             System.out.println(di.readLine());
-        }
+        }*/
 
+        //выписывает первую залупу из файла
+        /*
         String name;
         String continent;
         long population;
@@ -32,11 +34,11 @@ public class ParseFile {
         System.out.println(population);
         System.out.println(avgAge);*/
 
-        //Country czechia = new Country("Czech Republic", "Europe", 10_000_000, 85);
+        //Country czechia = new Country("Czech Republic", "Europe", 10_000_000, 85); // тупо обьект
 
 
-        //тут крч код, чтоб сортировать все это говно по Европейскому континенту
-        /*DataExport de = new DataExport("output.txt");
+        //тут крч код, чтоб сортировать все это говно только по Европейскому континенту
+        /*DataExport de = new DataExport("output.txt"); //тупо создает файл хз
 
         while(di.hasNext()){
 
@@ -58,6 +60,7 @@ public class ParseFile {
 
         }*/
 
+        //это твое говно решение задания, в котором нужно было выписать страну с найбольшес веком и с меньшей популяцией
         String nameMaxAvgAge = "";
         double maxAvgAge = 0;
         String nameMinPopulation = "";
