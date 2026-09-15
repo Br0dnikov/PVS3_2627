@@ -13,6 +13,16 @@ public class Tack {
         this.duration = duration;
     }
 
+    @Override
+    public String toString() {
+        return "Track{" +
+                "name='" + name + '\'' +
+                ", year=" + year +
+                ", rating=" + rating +
+                ", duration=" + duration +
+                '}';
+    }
+
     public void setDuration(int duration) {
         if (duration<0){
             System.out.println("Invalid duration");
@@ -23,6 +33,11 @@ public class Tack {
     }
 
     public void setRating(double rating) {
+        if(rating < 0.0 || rating > 10.0){
+            System.out.println("Invalid rating");
+            return;
+        }
+
         this.rating = rating;
     }
 
