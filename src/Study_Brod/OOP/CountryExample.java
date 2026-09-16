@@ -16,7 +16,7 @@ public class CountryExample {
         String population = data[2];
         String AvgAge = data[3];
 
-        Country country = new Country(name, continent, populatio, AvgAge);
+        Country country = new Country(name, continent, Long.parseLong(population), Double.parseDouble(AvgAge));
     }
     di.finishImport();
     }
