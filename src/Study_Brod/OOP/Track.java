@@ -1,12 +1,12 @@
 package Study_Brod.OOP;
 
-public class Tack {
+public class Track {
     String name;
     int year;
     double rating;
     int duration;
 
-    public Tack(String name, int year, double rating, int duration) {
+    public Track(String name, int year, double rating, int duration) {
         this.name = name;
         this.year = year;
         this.rating = rating;
@@ -56,4 +56,6 @@ public class Tack {
     public int getDuration() {
         return duration;
     }
+
+
 }
