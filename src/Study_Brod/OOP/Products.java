@@ -74,6 +74,7 @@ public class Products {
             String line = di.readLine();
             String[] tokens = line.split(";");
 
+            if (tokens.length == 3)
         }
 
     }
