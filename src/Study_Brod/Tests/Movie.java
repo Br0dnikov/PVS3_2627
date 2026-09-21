@@ -46,9 +46,11 @@ public class Movie {
                 afterMilleniumFilm.year = Integer.parseInt(tokens[1]);
                 afterMilleniumFilm.type = tokens[2];
                 afterMilleniumFilm.rating = Double.parseDouble(tokens[3]);
+
+                afterMilleniumMovies.add(afterMilleniumFilm.name);
             }
 
-            afterMilleniumMovies.add(afterMilleniumFilm.name);
+
 
             if (tokens[2].equals("Horror")){
                 horrorFilm.name = tokens[0];
