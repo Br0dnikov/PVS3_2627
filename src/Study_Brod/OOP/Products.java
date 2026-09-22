@@ -69,13 +69,22 @@ public class Products {
     public static void main(String[] args) {
         DataImport di = new DataImport("data/products");
         ArrayList <Product> productList = new ArrayList<>();
+        int allProducts = 0;
 
         while (di.hasNext()){
             String line = di.readLine();
             String[] tokens = line.split(";");
 
-            if (tokens.length == 3)
+            if (tokens.length == 3){
+                Product product = new Product(
+                        tokens[0],
+                        tokens[1],
+                        Integer.parseInt(tokens[2]));
+
+                allProducts += product.getAmount();
+            }
         }
 
+        System.out.println(allProducts);
     }
 }
