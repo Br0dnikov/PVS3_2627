@@ -67,7 +67,7 @@ class Product{
 public class Products {
 
     public static void main(String[] args) {
-        DataImport di = new DataImport("data/products");
+        DataImport di = new DataImport("data/products.txt");
         ArrayList <Product> productList = new ArrayList<>();
         int allProducts = 0;
 
