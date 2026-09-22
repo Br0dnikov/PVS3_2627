@@ -75,7 +75,7 @@ public class Products {
             String line = di.readLine();
             String[] tokens = line.split(";");
 
-            if (tokens.length == 3){
+            if (tokens.length >= 3){
                 Product product = new Product(
                         tokens[0],
                         tokens[1],

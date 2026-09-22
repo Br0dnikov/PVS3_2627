@@ -20,6 +20,8 @@ public class Movie {
         this.rating = rating;
     }
 
+
+
     public static void main(String[] args) {
         DataImport di = new DataImport("data/movieList.txt");
         DataExport de = new DataExport("data/horrors.txt");
