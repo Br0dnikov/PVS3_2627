@@ -1,44 +1,44 @@
-Albania (Europe) [3401200 people, average life expectancy: 71.6]
-Andorra (Europe) [78000 people, average life expectancy: 83.5]
-Austria (Europe) [8091800 people, average life expectancy: 77.7]
-Belgium (Europe) [10239000 people, average life expectancy: 77.8]
-Bulgaria (Europe) [8190900 people, average life expectancy: 70.9]
-Bosnia and Herzegovina (Europe) [3972000 people, average life expectancy: 71.5]
-Belarus (Europe) [10236000 people, average life expectancy: 68.0]
-Switzerland (Europe) [7160400 people, average life expectancy: 79.6]
-Czech Republic (Europe) [10278100 people, average life expectancy: 74.5]
-Germany (Europe) [82164700 people, average life expectancy: 77.4]
-Denmark (Europe) [5330000 people, average life expectancy: 76.5]
-Spain (Europe) [39441700 people, average life expectancy: 78.8]
-Estonia (Europe) [1439200 people, average life expectancy: 69.5]
-Finland (Europe) [5171300 people, average life expectancy: 77.4]
-France (Europe) [59225700 people, average life expectancy: 78.8]
-Faroe Islands (Europe) [43000 people, average life expectancy: 78.4]
-United Kingdom (Europe) [59623400 people, average life expectancy: 77.7]
-Gibraltar (Europe) [25000 people, average life expectancy: 79.0]
-Greece (Europe) [10545700 people, average life expectancy: 78.4]
-Croatia (Europe) [4473000 people, average life expectancy: 73.7]
-Hungary (Europe) [10043200 people, average life expectancy: 71.4]
-Ireland (Europe) [3775100 people, average life expectancy: 76.8]
-Iceland (Europe) [279000 people, average life expectancy: 79.4]
-Italy (Europe) [57680000 people, average life expectancy: 79.0]
-Liechtenstein (Europe) [32300 people, average life expectancy: 78.8]
-Lithuania (Europe) [3698500 people, average life expectancy: 69.1]
-Luxembourg (Europe) [435700 people, average life expectancy: 77.1]
-Latvia (Europe) [2424200 people, average life expectancy: 68.4]
-Monaco (Europe) [34000 people, average life expectancy: 78.8]
-Moldova (Europe) [4380000 people, average life expectancy: 64.5]
-Macedonia (Europe) [2024000 people, average life expectancy: 73.8]
-Malta (Europe) [380200 people, average life expectancy: 77.9]
-Netherlands (Europe) [15864000 people, average life expectancy: 78.3]
-Norway (Europe) [4478500 people, average life expectancy: 78.7]
-Poland (Europe) [38653600 people, average life expectancy: 73.2]
-Portugal (Europe) [9997600 people, average life expectancy: 75.8]
-Romania (Europe) [22455500 people, average life expectancy: 69.9]
-Russian Federation (Europe) [146934000 people, average life expectancy: 67.2]
-San Marino (Europe) [27000 people, average life expectancy: 81.1]
-Slovakia (Europe) [5398700 people, average life expectancy: 73.7]
-Slovenia (Europe) [1987800 people, average life expectancy: 74.9]
-Sweden (Europe) [8861400 people, average life expectancy: 79.6]
-Ukraine (Europe) [50456000 people, average life expectancy: 66.0]
-Yugoslavia (Europe) [10640000 people, average life expectancy: 72.4]
+Albania
+Andorra
+Austria
+Belgium
+Bulgaria
+Bosnia and Herzegovina
+Belarus
+Switzerland
+Czech Republic
+Germany
+Denmark
+Spain
+Estonia
+Finland
+France
+Faroe Islands
+United Kingdom
+Gibraltar
+Greece
+Croatia
+Hungary
+Ireland
+Iceland
+Italy
+Liechtenstein
+Lithuania
+Luxembourg
+Latvia
+Monaco
+Moldova
+Macedonia
+Malta
+Netherlands
+Norway
+Poland
+Portugal
+Romania
+Russian Federation
+San Marino
+Slovakia
+Slovenia
+Sweden
+Ukraine
+Yugoslavia

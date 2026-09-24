@@ -86,5 +86,6 @@ public class Products {
         }
 
         System.out.println(allProducts);
+        di.finishImport();
     }
 }

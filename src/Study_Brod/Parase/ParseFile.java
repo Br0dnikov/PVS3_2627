@@ -1,5 +1,6 @@
 package Study_Brod.Parase;
 
+import fileworks.DataExport;
 import fileworks.DataImport;
 
 public class ParseFile {
@@ -38,7 +39,7 @@ public class ParseFile {
 
 
         //тут крч код, чтоб сортировать все это говно только по Европейскому континенту
-        /*DataExport de = new DataExport("output.txt"); //тупо создает файл хз
+        DataExport de = new DataExport("output.txt"); //тупо создает файл хз
 
         while(di.hasNext()){
 
@@ -58,7 +59,7 @@ public class ParseFile {
                 de.writeLine(onecountry.toString());
             }
 
-        }*/
+        }
 
         //это твое говно решение задания, в котором нужно было выписать страну с найбольшес веком и с меньшей популяцией
         String nameMaxAvgAge = "";
@@ -93,7 +94,7 @@ public class ParseFile {
         System.out.println(nameMaxAvgAge);
         System.out.println(maxAvgAge);
 
-        //de.finishExport();
+        de.finishExport();
         di.finishImport();
 
     }
