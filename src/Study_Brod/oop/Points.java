@@ -1,8 +1,38 @@
-package Study_Brod.OOP;
+package Study_Brod.oop;
+
+import fileworks.DataImport;
+
+import java.lang.invoke.SwitchPoint;
+import java.util.ArrayList;
 
 public class Points {
     public static void main(String[] args) {
+        ArrayList<Point> points = new ArrayList<>();
+        DataImport di = new DataImport("data/points.txt");
 
+
+        while (di.hasNext()){
+            String line = di.readLine();
+            String[] tokens = line.split(",");
+
+            switch (tokens.length){
+                case 2:
+                    points.add(new Point(Double.parseDouble(tokens[0]),Double.parseDouble(tokens[1])));
+                    break;
+                case 3:
+                    points.add(new Point(tokens[0],Double.parseDouble(tokens[1]), Double.parseDouble(tokens[2])));
+                    break;
+                case 4:
+                    points.add(new Point(tokens[0],Double.parseDouble(tokens[1]), Double.parseDouble(tokens[2]), Double.parseDouble(tokens[3])));
+                    break;
+            }
+        }
+        di.finishImport();
+        System.out.println(points);
+
+        for (Point point : points){
+            System.out.println(points);
+        }
     }
 
 }
@@ -25,7 +55,6 @@ class Point{
     }
 
     public Point(double x, double y) {
-
         this.x = x;
         this.y = y;
         z = DEFAULT_Z;

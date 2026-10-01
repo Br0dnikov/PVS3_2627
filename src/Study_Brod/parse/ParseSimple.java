@@ -1,4 +1,4 @@
-package Study_Brod.Parase;
+package Study_Brod.parse;
 
 import java.util.Arrays;
 

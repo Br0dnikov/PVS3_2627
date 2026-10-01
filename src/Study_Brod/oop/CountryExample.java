@@ -1,6 +1,6 @@
-package Study_Brod.OOP;
+package Study_Brod.oop;
 
-import Study_Brod.Parase.Country;
+import Study_Brod.parse.Country;
 import fileworks.DataImport;
 
 public class CountryExample {

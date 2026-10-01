@@ -1,4 +1,4 @@
-package Study_Brod.Parase;
+package Study_Brod.parse;
 
 public class Country {
     String name, continent;

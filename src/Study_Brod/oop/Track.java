@@ -1,4 +1,4 @@
-package Study_Brod.OOP;
+package Study_Brod.oop;
 
 public class Track {
     String name;
