@@ -20,7 +20,7 @@ public class SteamGameTest {
 
         List<Game> games = new ArrayList<>();
 
-        // TODO: načíst soubor do arraylistu
+        // načíst soubor do arraylistu
         while (di.hasNext()){
             String line = di.readLine();
             String[] tokens = line.split("\t");
@@ -45,7 +45,7 @@ public class SteamGameTest {
     }
 
     private static Game mostExpansive(List<Game> games) {
-        // TODO: vrátit nejdražší hru
+        // vrátit nejdražší hru
         Game gameForBourgeois = new Game("", 0, 0, "");
         for (int i = 0; i < games.size(); i++) {
             if(games.get(i).getPrice() > gameForBourgeois.getPrice()){
@@ -57,7 +57,7 @@ public class SteamGameTest {
     }
 
     private static long totalFreeGames(List<Game> games) {
-        // TODO: vrátit počet her, které jsou zdarma
+        // vrátit počet her, které jsou zdarma
 
         long freeGames = 0;
         for (int i = 0; i < games.size(); i++) {
@@ -69,7 +69,7 @@ public class SteamGameTest {
     }
 
     private static double avgReviewPerGame(List<Game> games) {
-        // TODO: vrátit průměrný počet hodnocení
+        // vrátit průměrný počet hodnocení
 
         double avgReview = 0;
         for (int i = 0; i < games.size(); i++) {
@@ -83,7 +83,7 @@ public class SteamGameTest {
 }
 
 class Game {
-    // TODO: attributy, konstruktor(y), gettery/settery + minimálně toString()
+    // attributy, konstruktor(y), gettery/settery + minimálně toString()
     String gameName;
     double price;
     int players;
@@ -94,7 +94,7 @@ class Game {
         this.price = price;
         this.players = players;
 
-        // TODO: getter pro krátký popisek bude vracet "Not released yet" pokud není popisek uveden hra je "zdarma"
+        // getter pro krátký popisek bude vracet "Not released yet" pokud není popisek uveden hra je "zdarma"
         if(this.price == 0)this.description = "Not released yet";
         else description= "No description";
     }
