@@ -15,7 +15,7 @@ public class Animal {
     }
 
     public void eat(double energy) {
-        this.energy += Math.exp(energy);
+        energy += Math.exp(-energy);
     }
 
     public void makeNoise(){
@@ -38,6 +38,10 @@ class Cat extends Animal{
 
 class Dog extends Animal{
     String breed;
+
+    public Dog(String name, double energy) {
+        super(energy,name);
+    }
 
     public Dog(double energy, String name, String breed) {
         super(energy, name);
@@ -79,9 +83,28 @@ class Main{
 
             switch (tokens[0]){
                 case "Cat":
+                {
+                    animals.add(new Cat(Double.parseDouble(tokens[1]), tokens[2]));
+                    break;
+                }
+                case "Dog": {
+                    animals.add(new Dog(Double.parseDouble(tokens[1]),tokens[2], tokens[3]));
+                    break;
+                }
+                case "Pig": {
+                    animals.add(new Pig(Double.parseDouble(tokens[1]),tokens[2], Integer.parseInt(tokens[4])));
+                    break;
+                }
+            }
 
+
+        }
+        for(Animal animal: animals){
+            if(animal instanceof Dog){
+                System.out.println(((Dog) animal).breed);
             }
         }
+        System.out.println(animals);
     }
 }
 
