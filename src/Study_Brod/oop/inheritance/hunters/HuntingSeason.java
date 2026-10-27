@@ -21,7 +21,7 @@ public class HuntingSeason {
         }
     }
     public static void main(String[] args) {
-        ArrayList hunters = new ArrayList<>();
+        ArrayList<Hunter> hunters = new ArrayList<>();
         hunters.add(new Hunter("Theodere Roosvelt"));
         hunters.add(new Soldier("Jack Carter"));
         hunters.add(new Soldier("Chel"));
@@ -38,6 +38,12 @@ public class HuntingSeason {
             randomJob((Hunter) hunters.get(randomIndex));
         }
 
+        Hunter best = hunters.getFirst();
 
+        for (Hunter hunter:hunters){
+            if(hunter.gold>best.gold){
+                best = hunter;
+            }
+        }
     }
 }
