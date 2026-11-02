@@ -1,4 +1,4 @@
-package Study_Brod.oop.inheritance;
+package Study_Brod.exams;
 
 public class Surgeon extends Doctor{
     final static int SURGEON_BONUS = 25000;

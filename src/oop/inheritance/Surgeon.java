@@ -5,11 +5,11 @@ public class Surgeon extends Doctor{
 
     Surgeon(String name) {
         super(name);
-        salary += SURGEON_BONUS;
+        salary = SURGEON_BONUS;
     }
 
     void surgery(){
         System.out.println("Cutting you open...");
-        salary += 20000;
+        salary += 10000;
     }
 }

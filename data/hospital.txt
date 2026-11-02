@@ -1,0 +1,5 @@
+The best doctor is: Emma Wilson, Salary: 230000
+The worst doctor is: Alex Wilson, Salary: 25000
+Salary in this hospital is around: 95430
+Count of heart operation is: 882
+Count of penalty is: 1210
