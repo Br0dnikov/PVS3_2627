@@ -1,4 +1,4 @@
-package Study_Brod.exams;
+package Study_Brod.exams.hospital;
 
 public class CardicSurgeon extends Surgeon {
     final static int CS_BONUS = 35000;

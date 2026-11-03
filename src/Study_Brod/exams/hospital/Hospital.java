@@ -1,8 +1,7 @@
-package Study_Brod.exams;
+package Study_Brod.exams.hospital;
 
 import fileworks.DataExport;
 import fileworks.DataImport;
-import oop.inheritance.CardiacSurgeon;
 
 import java.util.ArrayList;
 
@@ -55,7 +54,7 @@ public class Hospital {
 
         // TODO: napsat test
 
-        ArrayList <Study_Brod.exams.Doctor> doctors = new ArrayList<>();
+        ArrayList <Doctor> doctors = new ArrayList<>();
         int heartOparations = 0;
         int penalty = 0;
 
@@ -66,7 +65,7 @@ public class Hospital {
 
             switch (token[1]){
                 case "Doctor": {
-                    doctors.add(new Study_Brod.exams.Doctor(token[0]));
+                    doctors.add(new Doctor(token[0]));
                     break;
                 }
                 case "Surgeon": {
