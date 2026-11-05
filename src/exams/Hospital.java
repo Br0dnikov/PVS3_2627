@@ -3,6 +3,8 @@ package exams;
 import fileworks.DataExport;
 import fileworks.DataImport;
 import oop.inheritance.Doctor;
+import oop.inheritance.Surgeon;
+import oop.inheritance.CardiacSurgeon;
 
 // Načtěte ze souboru hospitalData informace o doktorech
 // do souboru hospital.txt vypiste nasledujici informace o vsech doktorech:
