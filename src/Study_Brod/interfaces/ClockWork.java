@@ -1,12 +1,12 @@
 package Study_Brod.interfaces;
 
-public class cloxkWork {
+public class ClockWork {
     public static void main(String[] args) {
         StopWatch watch = new StopWatch(0);
-        watch.AddMilliseconds(5500);
         watch.SetStart();
+        watch.AddMilliseconds(5500);
         watch.SetStop();
-        watch.DisplayTime();
+        watch.displayTime();
     }
 }
 
@@ -23,7 +23,7 @@ class DigitalClock implements TimeSupport{
     }
 
     @Override
-    public void DisplayTime(){
+    public void displayTime(){
         System.out.println("Today: " +day+"."+month+"."+year);
     }
 }
@@ -51,12 +51,13 @@ class StopWatch implements TimeSupport{
     }
 
     @Override
-    void DisplayTime(){
+    public void displayTime(){
         long duration = stop-start;
-        double seconds = duration/1000d;
+        double totalSeconds = duration/1000.0;
 
-        int minutes = (int) seconds/60;
-        seconds %= 60;
+        int minutes = (int) totalSeconds/60;
+        double seconds = totalSeconds % 60.0;
+        System.out.println(minutes + ":" + seconds);
 
 
     }
