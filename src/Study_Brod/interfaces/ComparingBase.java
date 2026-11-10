@@ -21,12 +21,30 @@ public class ComparingBase {
         items.add(new Item("White Mango", 10000, 1.55));
         items.add(new Item("Steak", 1000, 10));
 
-        printList(items);
+//        printList(items);
+//
+//        Collections.sort(items);
+//
+//        printList(items);
 
-        Collections.sort(items);
-
+        items.sort(BY_PRICE);
         printList(items);
     }
+
+    public static final Comparator<Item> BY_PRICE = new Comparator<Item>() {
+        @Override
+        public int compare(Item o1, Item o2) {
+            return Double.compare(o1.price, o2.price);
+        }
+    };
+
+
+    public static final Comparator<Item> BY_TOTAL_PRICE = new Comparator<Item>() {
+        @Override
+        public int compare(Item o1, Item o2) {
+            return Double.compare(o1.price * o1.quantity, o2.price * o2.quantity);
+        }
+    };
 
     static class Item implements Comparable<Item>{
         String name;

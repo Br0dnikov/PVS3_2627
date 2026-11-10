@@ -94,8 +94,8 @@ public class ParseFile {
         System.out.println(nameMaxAvgAge);
         System.out.println(maxAvgAge);
 
-        de.finishExport();
         di.finishImport();
+        de.finishExport();
 
     }
 }

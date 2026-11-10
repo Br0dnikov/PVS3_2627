@@ -1,9 +1,10 @@
 package Study_Brod.parse;
 
-public class Country {
-    String name, continent;
+public class Country implements Comparable<Country> {
+    public String name;
+    String continent;
     long population;
-    double avgAge;
+    public double avgAge;
 
     public Country(String name, String continent, long population, double avgAge) {
         this.name = name;
@@ -46,5 +47,11 @@ public class Country {
                 ", population=" + population +
                 ", avgAge=" + avgAge +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Country o) {
+        return Integer.compare(name.length(), o.name.length());
+
     }
 }
