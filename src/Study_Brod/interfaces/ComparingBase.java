@@ -27,6 +27,9 @@ public class ComparingBase {
 //
 //        printList(items);
 
+        Collections.shuffle(items);
+        printList(items);
+
         items.sort(BY_PRICE);
         printList(items);
     }

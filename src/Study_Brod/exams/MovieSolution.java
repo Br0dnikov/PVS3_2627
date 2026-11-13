@@ -5,14 +5,14 @@ import fileworks.DataImport;
 
 import java.util.ArrayList;
 
-public class Movie {
+public class MovieSolution {
 
     String name;
     int year;
     String type;
     double rating;
 
-    public Movie(String name, int year, String type, double rating) {
+    public MovieSolution(String name, int year, String type, double rating) {
         this.name = name;
         this.year = year;
         this.type = type;
@@ -25,9 +25,9 @@ public class Movie {
         DataImport di = new DataImport("data/movieList.txt");
         DataExport de = new DataExport("data/horrors.txt");
 
-        Movie bestFilm = new Movie("N/A", 0, "N/A", 0);
-        Movie afterMilleniumFilm = new Movie("N/A", 0, "N/A", 0);
-        Movie horrorFilm = new Movie("N/A", 0, "horror", 0);
+        MovieSolution bestFilm = new MovieSolution("N/A", 0, "N/A", 0);
+        MovieSolution afterMilleniumFilm = new MovieSolution("N/A", 0, "N/A", 0);
+        MovieSolution horrorFilm = new MovieSolution("N/A", 0, "horror", 0);
 
         ArrayList afterMilleniumMovies = new ArrayList<>();
 
