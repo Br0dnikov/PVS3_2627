@@ -30,23 +30,23 @@ public class MovieComparing {
     }
 
     public static void main(String[] args) {
-        DataImport di = new DataImport("data/movieList.txt");
+        DataImport di = new DataImport("data/Movies.txt");
         ArrayList<Movie> movies = new ArrayList<>();
 
         while (di.hasNext()){
             String line = di.readLine();
             String[] tokens = line.split(";");
 
-            movies.add(new Movie(tokens[0], Integer.parseInt(tokens[1]), Double.parseDouble( tokens[2]),Integer.parseInt(tokens[3])));
+            movies.add(new Movie(tokens[0], Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]),Integer.parseInt(tokens[3])));
         }
 
-        movies.sort((BY_OLDEST).reversed());
+        movies.sort((BY_OLDEST));
         printList(movies);
+        System.out.println("\n----------------------------\n");
         movies.sort((BY_NAME));
         printList(movies);
-        movies.sort((BY_NAME));
-        printList(movies);
-        movies.sort((BY_RATING));
+        System.out.println("\n----------------------------\n");
+        movies.sort((BY_RATING).reversed());
         for (int i = 0; i < 10; i++) {
             System.out.println(movies.get(i));
         }
